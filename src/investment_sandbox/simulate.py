@@ -1,4 +1,4 @@
-"""Twenty years of one market, a year at a time: dispatch, forecast, the firms' decisions, the tender, then growth in demand."""
+"""One market run forward a year at a time: dispatch, forecast, the firms' decisions, the tender, then growth in demand."""
 
 from __future__ import annotations
 

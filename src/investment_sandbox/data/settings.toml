@@ -6,7 +6,7 @@
 price_cap_per_mwh = 20300.0
 
 [time]
-start_year = 2026
+start_year = 2027
 years = 20
 
 [demand]

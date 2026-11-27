@@ -1,4 +1,4 @@
-"""Twenty years, three times on one draw."""
+"""A full run, three times on one draw."""
 
 import time
 
