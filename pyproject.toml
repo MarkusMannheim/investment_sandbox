@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "investment-sandbox"
+version = "0.2.0"
+description = "A small agent-based model of one electricity market, built to show why investors hesitate and what contracts do about it"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENCE" }
+dependencies = ["numpy>=1.26"]
+
+[project.optional-dependencies]
+notebook = ["jupyterlab>=4.0", "ipykernel>=6.0", "pandas>=2.1", "plotly>=5.18"]
+dev = ["pytest>=8.0", "nbformat>=5.9", "nbclient>=0.9", "ipykernel>=6.0", "pandas>=2.1", "plotly>=5.18",
+       "matplotlib>=3.8", "pyarrow>=14"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+investment_sandbox = ["data/*.csv", "data/*.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: runs the notebook end to end",
+]

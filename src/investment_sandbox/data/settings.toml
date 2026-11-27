@@ -1,0 +1,44 @@
+# Unknown keys raise at load, and a test holds that every key is read somewhere
+
+[market]
+# The market price cap from 1 July 2025, in the AEMC's schedule of reliability settings
+# published 27 February 2026. Unmet demand is counted at this price
+price_cap_per_mwh = 20300.0
+
+[time]
+start_year = 2026
+years = 20
+
+[demand]
+# Average demand in the first year, in MW, set so that the starting fleet meets demand
+# in every weather year
+average_mw = 7000.0
+
+[storage]
+# The share of the energy a battery stores that it delivers
+round_trip_efficiency = 0.85
+# The hour a battery's day starts, when it is taken to be empty
+day_start_hour = 7
+
+[forward]
+# The years ahead that the forecast looks at. A firm averages what a plant would earn
+# across them, and the tender reads the nearest
+years_ahead = [4, 8]
+
+[investment]
+# How strongly the firms dislike risk. Zero is a firm that builds whatever breaks even.
+# One is a coefficient of absolute risk aversion of 1 per $100,000 a megawatt a year
+caution = 1.0
+# One block of new plant, as a share of peak demand, rounded to whole units
+block_fraction_of_peak = 0.05
+# A safety stop on the blocks committed in a year, reported if it is ever reached
+max_blocks_per_year = 30
+
+[tender]
+# The technologies that can bid. An empty list means no tender is held
+technologies = ["ocgt", "ccgt", "battery_4h", "battery_8h"]
+# The most unmet demand the government accepts in the forecast, as a share of demand.
+# The National Electricity Market's reliability standard is 0.002%
+reliability_standard = 0.00002
+# How many years a contract fixes a plant's income for
+contract_years = 12

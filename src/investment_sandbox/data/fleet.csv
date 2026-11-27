@@ -1,0 +1,22 @@
+unit,technology,capacity_mw,availability,srmc_per_mwh,commissioned_year,retirement_year,fom_per_kw_year,duration_h,derivation
+coal_a,coal,3000,0.82,47,1985,2029,65,,Stylised black coal station; capacity rounded from published NSW unit ratings; availability rounded within the IASR's forced and planned outage allowances; running cost from IASR coal price and heat rate ranges; fixed cost rounded within GenCost black coal ranges
+coal_b,coal,2800,0.82,44,1990,2033,65,,Stylised black coal station; as coal_a
+coal_c,coal,1600,0.82,52,1993,2036,65,,Stylised black coal station; as coal_a
+coal_d,coal,1400,0.82,50,1995,2040,65,,Stylised black coal station; as coal_a
+ccgt_a,ccgt,500,0.85,96,2006,2031,35,,Stylised combined cycle plant; running cost from IASR gas price and heat rate ranges; fixed cost from the combined cycle row of tech_costs.csv; split into 2 parts with stylised start years so that the plant does not all retire in one year
+ccgt_b,ccgt,500,0.85,96,2012,2037,35,,A further part of the same stylised plant; as ccgt_a
+ocgt_a,ocgt,1000,0.90,181,2007,2032,25,,Stylised open cycle peakers; running cost from IASR gas price and heat rate ranges; fixed cost from the open cycle row of tech_costs.csv; split into 2 parts with stylised start years so that the plant does not all retire in one year
+ocgt_b,ocgt,1000,0.90,181,2013,2038,25,,A further part of the same stylised plant; as ocgt_a
+peaker_dist,ocgt,600,0.95,480,2010,2035,25,,Stylised high-cost peaking tier standing for distillate-fired and other expensive peaking plant; without it no hour settles between about $190 and the demand-response rungs; running cost rounded within published distillate and heat rate ranges
+wind_a,wind,1000,1.00,0,2014,2039,28,,Stylised onshore wind fleet sized within published NSW registered capacity; output follows the weather table's wind capacity factor; split into 3 parts with stylised start years so that the plant does not all retire in one year
+wind_b,wind,1000,1.00,0,2016,2041,28,,A further part of the same stylised plant; as wind_a
+wind_c,wind,1000,1.00,0,2019,2044,28,,A further part of the same stylised plant; as wind_a
+solar_a,solar,1000,1.00,0,2018,2043,13,,Stylised utility solar fleet sized within published NSW registered capacity; output follows the weather table's solar capacity factor; split into 3 parts with stylised start years so that the plant does not all retire in one year
+solar_b,solar,1000,1.00,0,2020,2045,13,,A further part of the same stylised plant; as solar_a
+solar_c,solar,1000,1.00,0,2022,2047,13,,A further part of the same stylised plant; as solar_a
+battery_a,battery_4h,750,1.00,0,2020,2035,19,4,Stylised four-hour batteries sized within published NSW registered and committed capacity; fixed cost from the battery row of tech_costs.csv; split into 2 parts with stylised start years so that the plant does not all retire in one year
+battery_b,battery_4h,750,1.00,0,2024,2039,19,4,A further part of the same stylised plant; as battery_a
+battery_c,battery_4h,1500,1.00,0,2027,2042,19,4,Stylised committed batteries under construction at the start, sized within published NSW committed storage capacity; the market starts with a pipeline, as the real one does
+wind_d,wind,1500,1.00,0,2028,2053,28,,Stylised committed wind under construction at the start, sized within published NSW committed capacity
+solar_d,solar,1500,1.00,0,2028,2053,13,,Stylised committed solar under construction at the start, sized within published NSW committed capacity
+ocgt_c,ocgt,600,0.90,181,2027,2052,25,,Stylised committed open cycle gas under construction at the start, sized within published NSW committed capacity
