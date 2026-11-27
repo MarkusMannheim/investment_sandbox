@@ -25,7 +25,7 @@ class Weather:
 
 @lru_cache(maxsize=1)
 def load_weather() -> Weather:
-    """Read data/weather.csv, derived from AEMO's ISP traces by tools/derive_weather.py."""
+    """Read data/weather.csv, which is derived from AEMO's ISP traces."""
     with (_data_dir() / "weather.csv").open("rb") as fh:
         table = np.loadtxt(fh, delimiter=",", skiprows=1)
     years = tuple(int(y) for y in np.unique(table[:, 0]))

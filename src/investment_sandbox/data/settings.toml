@@ -1,4 +1,4 @@
-# Unknown keys raise at load, and a test holds that every key is read somewhere
+# Unknown keys raise at load
 
 [market]
 # The market price cap from 1 July 2025, in the AEMC's schedule of reliability settings
