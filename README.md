@@ -6,6 +6,8 @@ A least-cost model asks what an electricity system *should* contain, and whateve
 
 In a least-cost model, a higher cost of capital makes plant more expensive, but everything still gets built. The firms in this model dislike risk. They build only when what a plant is expected to earn clears its cost by a margin for that risk, so the plant with the least certain income is built late or not at all.
 
+The model is illustrative. Its region is stylised, sized on public data for New South Wales. It is a much simplified version of a larger, higher-fidelity model of the whole National Electricity Market that follows the same yearly loop.
+
 ## What it shows
 
 The table compares three runs on the same demand and weather: firms with no caution, cautious firms and cautious firms with a government reliability tender.
@@ -60,10 +62,6 @@ The notebook's settings sit in one cell. Start with these three.
 - Lengthen the tender's contracts and they cost less, while reliability barely changes.
 - Change the demand path to low or high, and both the amount built and the cost of the contracts change.
 
-## What it is
-
-The model is illustrative. Its region is stylised, sized on public data for New South Wales, and nothing it produces is a forecast. It is a much simplified version of a larger, higher-fidelity model of the whole National Electricity Market that follows the same yearly loop.
-
 ## Licence and data
 
-Code is [MIT](LICENCE). The data files in [src/investment_sandbox/data/](src/investment_sandbox/data/) are not: they are derived from published sources and carry those sources' terms. [DATA_SOURCES.md](DATA_SOURCES.md) names the source, the derivation and the attribution for each. To cite the model, use [CITATION.cff](CITATION.cff).
+Code is [MIT](LICENCE). The data files in [src/investment_sandbox/data/](src/investment_sandbox/data/) are derived from published sources and carry those sources' terms. [DATA_SOURCES.md](DATA_SOURCES.md) names the source, the derivation and the attribution for each. To cite the model, use [CITATION.cff](CITATION.cff).
