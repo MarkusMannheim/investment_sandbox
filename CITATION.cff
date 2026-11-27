@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: Investment sandbox
+message: >-
+  If you use this model, cite it as below and say that its numbers are illustrative.
+type: software
+authors:
+  - family-names: Mannheim
+    given-names: Markus
+abstract: >-
+  A small agent-based model of an electricity market, in which firms decide what to build. It is designed to show how uncertainty shapes those decisions and how government contracts can change them. The model follows one region, hour by hour, for 20 years. Each year, firms that dislike risk decide what to build using a forecast of what new plant might earn. A government reliability tender can be switched on and compared on the same demand and weather.
+keywords:
+  - electricity market
+  - investment under uncertainty
+  - agent-based model
+  - energy modelling
+license: MIT
+repository-code: https://github.com/MarkusMannheim/investment_sandbox
+date-released: '2026-11-27'
